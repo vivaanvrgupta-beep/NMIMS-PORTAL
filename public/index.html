@@ -107,6 +107,7 @@
 
     <!-- APP -->
     <div id="app">
+      <div id="sidebar-overlay" onclick="closeSidebar()"></div>
       <aside id="sidebar">
         <div class="sb-head">
           <img
@@ -171,6 +172,9 @@
 
       <div id="topbar">
         <div class="tb-l">
+          <button id="menu-btn" class="menu-btn" onclick="toggleSidebar()">
+            ☰
+          </button>
           <div class="tb-line"></div>
           <span class="tb-title" id="tbtitle">Dashboard</span>
         </div>
@@ -496,6 +500,38 @@
           </div>
         </div>
       </main>
+
+      <!-- MOBILE BOTTOM NAV -->
+      <nav id="mobile-nav">
+        <button
+          class="m-nav-item active"
+          data-mp="dashboard"
+          onclick="navTo('dashboard')"
+        >
+          <div class="m-nav-icon">⊞</div>
+          <div class="m-nav-lbl">Dashboard</div>
+        </button>
+        <button class="m-nav-item" data-mp="jobs" onclick="navTo('jobs')">
+          <div class="m-nav-icon">💼</div>
+          <div class="m-nav-lbl">Jobs</div>
+        </button>
+        <button
+          class="m-nav-item"
+          data-mp="students"
+          onclick="navTo('students')"
+        >
+          <div class="m-nav-icon">🎓</div>
+          <div class="m-nav-lbl">Students</div>
+        </button>
+        <button
+          class="m-nav-item"
+          data-mp="applications"
+          onclick="navTo('applications')"
+        >
+          <div class="m-nav-icon">📋</div>
+          <div class="m-nav-lbl">Apps</div>
+        </button>
+      </nav>
     </div>
 
     <div id="loader">

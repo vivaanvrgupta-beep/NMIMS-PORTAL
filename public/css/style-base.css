@@ -75,6 +75,12 @@ body::after {
   z-index: 9998;
   opacity: 0.5;
 }
+img,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+}
 .amb {
   position: fixed;
   inset: 0;

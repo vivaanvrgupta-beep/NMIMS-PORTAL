@@ -134,17 +134,36 @@ function navTo(pg) {
   document
     .querySelectorAll(".nav-item")
     .forEach((e) => e.classList.remove("active"));
-  document.querySelector(`[data-p="${pg}"]`).classList.add("active");
+  const ni = document.querySelector(`.nav-item[data-p="${pg}"]`);
+  if (ni) ni.classList.add("active");
+
+  document
+    .querySelectorAll(".m-nav-item")
+    .forEach((e) => e.classList.remove("active"));
+  const mi = document.querySelector(`.m-nav-item[data-mp="${pg}"]`);
+  if (mi) mi.classList.add("active");
+
   document
     .querySelectorAll(".page")
     .forEach((e) => e.classList.remove("active"));
   document.getElementById(`page-${pg}`).classList.add("active");
   document.getElementById("tbtitle").textContent = NAVL[pg];
+
+  closeSidebar();
+
   if (pg === "dashboard") initDB();
   if (pg === "jobs") initJobs();
   if (pg === "students") initStu();
   if (pg === "applications") initApps();
   if (pg === "analytics") initAna();
+}
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("open");
+  document.getElementById("sidebar-overlay").classList.toggle("open");
+}
+function closeSidebar() {
+  document.getElementById("sidebar").classList.remove("open");
+  document.getElementById("sidebar-overlay").classList.remove("open");
 }
 function toast(msg, type = "inf") {
   const ic = { suc: "✓", err: "✕", inf: "ℹ" };
