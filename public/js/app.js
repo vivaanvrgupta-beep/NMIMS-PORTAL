@@ -1,6 +1,6 @@
 const API = "http://localhost:3000/api";
-Chart.defaults.color = "rgba(255,255,255,0.42)";
-Chart.defaults.borderColor = "rgba(255,255,255,0.055)";
+Chart.defaults.color = "rgba(60,40,45,0.65)";
+Chart.defaults.borderColor = "rgba(200,16,46,0.08)";
 Chart.defaults.font.family = "'Sora',sans-serif";
 let STUDENTS = [],
   JOBS = [],

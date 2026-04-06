@@ -48,7 +48,7 @@ function initDB() {
       maintainAspectRatio: false,
       plugins: { legend: { display: false } },
       scales: {
-        y: { beginAtZero: true, grid: { color: "rgba(255,255,255,0.04)" } },
+        y: { beginAtZero: true, grid: { color: "rgba(200,16,46,0.06)" } },
         x: { grid: { display: false } },
       },
     },
@@ -99,7 +99,7 @@ function initDB() {
       maintainAspectRatio: false,
       plugins: { legend: { display: false } },
       scales: {
-        y: { beginAtZero: true, grid: { color: "rgba(255,255,255,0.04)" } },
+        y: { beginAtZero: true, grid: { color: "rgba(200,16,46,0.06)" } },
         x: { grid: { display: false } },
       },
     },

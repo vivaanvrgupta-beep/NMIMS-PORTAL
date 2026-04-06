@@ -65,7 +65,7 @@ function initAna() {
       maintainAspectRatio: false,
       plugins: { legend: { display: false } },
       scales: {
-        x: { beginAtZero: true, grid: { color: "rgba(255,255,255,0.04)" } },
+        x: { beginAtZero: true, grid: { color: "rgba(200,16,46,0.06)" } },
         y: { grid: { display: false } },
       },
     },
@@ -103,8 +103,8 @@ function initAna() {
       plugins: { legend: { display: false } },
       scales: {
         r: {
-          grid: { color: "rgba(255,255,255,0.05)" },
-          angleLines: { color: "rgba(255,255,255,0.05)" },
+          grid: { color: "rgba(200,16,46,0.06)" },
+          angleLines: { color: "rgba(200,16,46,0.06)" },
           ticks: { display: false, backdropColor: "transparent" },
         },
       },
@@ -144,7 +144,7 @@ function initAna() {
         legend: {
           position: "top",
           labels: {
-            color: "rgba(255,255,255,0.55)",
+            color: "rgba(60,40,45,0.60)",
             boxWidth: 10,
             borderRadius: 3,
             padding: 16,
@@ -153,7 +153,7 @@ function initAna() {
       },
       scales: {
         x: { stacked: true, grid: { display: false } },
-        y: { stacked: true, grid: { color: "rgba(255,255,255,0.04)" } },
+        y: { stacked: true, grid: { color: "rgba(200,16,46,0.06)" } },
       },
     },
   });
