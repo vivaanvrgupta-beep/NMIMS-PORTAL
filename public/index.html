@@ -10,6 +10,8 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </head>
   <body>
     <div class="amb">
@@ -75,7 +77,7 @@
             <div class="lf-title">Welcome back</div>
             <div class="lf-sub">Sign in to your admin account</div>
             <div class="falert" id="lalert">
-              ⚠ Invalid credentials. Try admin@nmims.in / admin123
+              <ion-icon name="warning-outline" style="font-size:15px;vertical-align:-2px"></ion-icon> Invalid credentials. Try admin@nmims.in / admin123
             </div>
             <div class="fg">
               <label class="flbl">Email Address</label
@@ -124,11 +126,11 @@
             data-p="dashboard"
             onclick="navTo('dashboard')"
           >
-            <div class="nav-icon">⊞</div>
+            <div class="nav-icon"><ion-icon name="grid-outline"></ion-icon></div>
             <span class="nav-lbl">Dashboard</span>
           </button>
           <button class="nav-item" data-p="jobs" onclick="navTo('jobs')">
-            <div class="nav-icon">💼</div>
+            <div class="nav-icon"><ion-icon name="briefcase-outline"></ion-icon></div>
             <span class="nav-lbl">Job Management</span>
           </button>
           <button
@@ -136,7 +138,7 @@
             data-p="students"
             onclick="navTo('students')"
           >
-            <div class="nav-icon">🎓</div>
+            <div class="nav-icon"><ion-icon name="school-outline"></ion-icon></div>
             <span class="nav-lbl">Students</span>
           </button>
           <button
@@ -144,7 +146,7 @@
             data-p="applications"
             onclick="navTo('applications')"
           >
-            <div class="nav-icon">📋</div>
+            <div class="nav-icon"><ion-icon name="document-text-outline"></ion-icon></div>
             <span class="nav-lbl">Applications</span>
           </button>
           <button
@@ -152,7 +154,7 @@
             data-p="analytics"
             onclick="navTo('analytics')"
           >
-            <div class="nav-icon">📊</div>
+            <div class="nav-icon"><ion-icon name="bar-chart-outline"></ion-icon></div>
             <span class="nav-lbl">Analytics</span>
           </button>
         </nav>
@@ -165,7 +167,7 @@
             </div>
           </div>
           <button class="btn-logout" onclick="doLogout()">
-            ⎋ &nbsp;Sign Out
+            <ion-icon name="log-out-outline"></ion-icon>&nbsp;Sign Out
           </button>
         </div>
       </aside>
@@ -173,15 +175,15 @@
       <div id="topbar">
         <div class="tb-l">
           <button id="menu-btn" class="menu-btn" onclick="toggleSidebar()">
-            ☰
+            <ion-icon name="menu-outline"></ion-icon>
           </button>
           <div class="tb-line"></div>
           <span class="tb-title" id="tbtitle">Dashboard</span>
         </div>
         <div class="tb-r">
-          <div class="tb-chip">📅 <span id="tbdate"></span></div>
+          <div class="tb-chip"><ion-icon name="calendar-outline"></ion-icon> <span id="tbdate"></span></div>
           <button class="tb-ico" onclick="toast('No new notifications', 'inf')">
-            🔔
+            <ion-icon name="notifications-outline"></ion-icon>
           </button>
           <img
             class="tb-logo2"
@@ -246,7 +248,7 @@
                 <p class="ph-sub" id="jcl"></p>
               </div>
               <button class="btn-cta" onclick="toggleJobForm()">
-                ＋ Post New Job
+                <ion-icon name="add-circle-outline"></ion-icon> Post New Job
               </button>
             </div>
             <div id="jfw">
@@ -316,7 +318,7 @@
             <div class="tc">
               <div class="ttb">
                 <div class="sw">
-                  <span class="si-icon">🔍</span
+                  <span class="si-icon"><ion-icon name="search-outline"></ion-icon></span
                   ><input
                     class="si"
                     type="text"
@@ -352,7 +354,7 @@
             <div class="tc">
               <div class="ttb">
                 <div class="sw">
-                  <span class="si-icon">🔍</span
+                  <span class="si-icon"><ion-icon name="search-outline"></ion-icon></span
                   ><input
                     class="si"
                     type="text"
@@ -424,7 +426,7 @@
             <div class="tc">
               <div class="ttb">
                 <div class="sw">
-                  <span class="si-icon">🔍</span
+                  <span class="si-icon"><ion-icon name="search-outline"></ion-icon></span
                   ><input
                     class="si"
                     type="text"
@@ -508,11 +510,11 @@
           data-mp="dashboard"
           onclick="navTo('dashboard')"
         >
-          <div class="m-nav-icon">⊞</div>
+          <div class="m-nav-icon"><ion-icon name="grid-outline"></ion-icon></div>
           <div class="m-nav-lbl">Dashboard</div>
         </button>
         <button class="m-nav-item" data-mp="jobs" onclick="navTo('jobs')">
-          <div class="m-nav-icon">💼</div>
+          <div class="m-nav-icon"><ion-icon name="briefcase-outline"></ion-icon></div>
           <div class="m-nav-lbl">Jobs</div>
         </button>
         <button
@@ -520,7 +522,7 @@
           data-mp="students"
           onclick="navTo('students')"
         >
-          <div class="m-nav-icon">🎓</div>
+          <div class="m-nav-icon"><ion-icon name="school-outline"></ion-icon></div>
           <div class="m-nav-lbl">Students</div>
         </button>
         <button
@@ -528,7 +530,7 @@
           data-mp="applications"
           onclick="navTo('applications')"
         >
-          <div class="m-nav-icon">📋</div>
+          <div class="m-nav-icon"><ion-icon name="document-text-outline"></ion-icon></div>
           <div class="m-nav-lbl">Apps</div>
         </button>
       </nav>

@@ -21,15 +21,15 @@ function initAna() {
     ),
   ].length;
   document.getElementById("kg").innerHTML = [
-    { l: "Placement Rate", v: `${pct}%`, ic: "📈", c: "rgba(0,230,118,0.12)" },
-    { l: "Average CGPA", v: avg, ic: "⭐", c: "rgba(255,171,0,0.12)" },
+    { l: "Placement Rate", v: `${pct}%`, ic: '<ion-icon name="trending-up-outline"></ion-icon>', c: "rgba(0,230,118,0.12)" },
+    { l: "Average CGPA", v: avg, ic: '<ion-icon name="star-outline"></ion-icon>', c: "rgba(255,171,0,0.12)" },
     {
       l: "Top Recruiter",
       v: topRec ? topRec[0] : "N/A",
-      ic: "🏆",
+      ic: '<ion-icon name="trophy-outline"></ion-icon>',
       c: "rgba(200,16,46,0.12)",
     },
-    { l: "Unique Skills", v: us, ic: "🛠", c: "rgba(192,132,252,0.12)" },
+    { l: "Unique Skills", v: us, ic: '<ion-icon name="construct-outline"></ion-icon>', c: "rgba(192,132,252,0.12)" },
   ]
     .map(
       (k, i) =>

@@ -5,19 +5,19 @@ function initDB() {
     {
       l: "Total Students",
       v: STUDENTS.length,
-      ic: "🎓",
+      ic: '<ion-icon name="school-outline"></ion-icon>',
       c: "rgba(200,16,46,0.14)",
     },
-    { l: "Jobs Posted", v: JOBS.length, ic: "💼", c: "rgba(96,165,250,0.14)" },
-    { l: "Applications", v: APPS.length, ic: "📋", c: "rgba(255,171,0,0.14)" },
-    { l: "Students Placed", v: placed, ic: "✅", c: "rgba(0,230,118,0.14)" },
-    { l: "Not Placed", v: np, ic: "⏳", c: "rgba(255,68,102,0.14)" },
+    { l: "Jobs Posted", v: JOBS.length, ic: '<ion-icon name="briefcase-outline"></ion-icon>', c: "rgba(96,165,250,0.14)" },
+    { l: "Applications", v: APPS.length, ic: '<ion-icon name="document-text-outline"></ion-icon>', c: "rgba(255,171,0,0.14)" },
+    { l: "Students Placed", v: placed, ic: '<ion-icon name="checkmark-circle-outline"></ion-icon>', c: "rgba(0,230,118,0.14)" },
+    { l: "Not Placed", v: np, ic: '<ion-icon name="time-outline"></ion-icon>', c: "rgba(255,68,102,0.14)" },
     {
       l: "Placement %",
       v: STUDENTS.length
         ? Math.round((placed / STUDENTS.length) * 100) + "%"
         : "0%",
-      ic: "📈",
+      ic: '<ion-icon name="trending-up-outline"></ion-icon>',
       c: "rgba(192,132,252,0.14)",
     },
   ];
